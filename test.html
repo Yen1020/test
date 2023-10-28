@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../YuShanDiamond/assets/vendor/normalize.css">
+	<link rel="stylesheet" href="./css/test_02.css">
+	<!--  -->
+	<link rel="stylesheet" href="../test/assets/vendor/jquery/slick.css">
+	<link rel="stylesheet" href="../test/assets/vendor/jquery/slick-theme.css">
+	<title>test</title>
+</head>
+<body>
+
+	<div class="your-class">
+		<div class="box box1">your content</div>
+		<div class="box box2">your content</div>
+		<div class="box box3">your content</div>
+		<div class="box box1">your content</div>
+		<div class="box box2">your content</div>
+		<div class="box box3">your content</div>
+	  </div>
+
+
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="../test/assets/vendor/jquery/slick.min.js"></script>
+	
+	  <script type="text/javascript">
+		$(document).ready(function(){
+		  $('.your-class').slick({
+			dots: true,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 1,
+			adaptiveHeight: true
+		  });
+		});
+	  </script>
+
+</body>
+</html>
