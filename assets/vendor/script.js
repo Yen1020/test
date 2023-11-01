@@ -1,15 +1,9 @@
-.document.addEventListener("DOMContentLoaded",function () {
+fetch('./footer.html')
+.then(res => res.text())
+.then(text => {
+    let oldelem = document.querySelector("script#footer-placeholders");
+    let newelem = document.createElement("div");
+    newelem.innerHTML = text;
+    oldelem.parentNode.replaceChild(newelem,oldelem);
+})
 
-    const closeBtn = document.getElementById("close-btn");
-
-    if (closeBtn) {
-   
-      closeBtn.addEventListener("click", function (event) {
-   
-        event.preventDefault(); // 避免<a>元素的預設行為
-   
-      });
-   
-    }
-   
-});

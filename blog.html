@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/vendor/normalize.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <script type="module" src="assets/vendor/script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Start navigation -->
+	<div class="navbar">
+        <div class="container">
+
+            <a href="./index.html" class="logo">Demo</a>
+            
+            <ul class="nav">
+                <li><a href="#" class="nav__link">About</a></li>
+                <li><a href="#" class="nav__link">Service</a></li>
+                <li><a href="#" class="nav__link">Product</a></li>
+                <li><a href="#" class="nav__link">Contact Us</a></li>
+                <li><a href="./blog.html" class="nav__link">Blog</a></li>    
+            </ul>
+    
+            <a href="#" class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+        </div>        
+	</div>
+	<!-- End navigation -->
+
+    <!-- Start blog -->
+    <div class="blog">
+        <div class="container">
+
+            <div class="search_bar">
+                <input type="search" id="search">
+                <label for="search">搜尋</label>
+            </div>
+
+            <div class="row u-mb-48">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="img-container">
+                        <img src="assets/images/examples/example_02.jpg" alt="" class="img">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <h1>範例文章01,</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iure totam sed nemo et eos ut accusamus placeat obcaecati blanditiis officia repudiandae, fugiat amet, aspernatur consectetur veniam, excepturi laudantium dicta facilis. Accusantium, nihil, tenetur dicta nobis ex inventore temporibus molestias, error quas voluptatum obcaecati neque odio numquam debitis vero velit.</p>
+                </div>
+            </div>
+            <div class="row u-mb-48">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="img-container">
+                        <img src="assets/images/examples/example_03.jpg" alt="" class="img">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <h1>Example</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iure totam sed nemo et eos ut accusamus placeat obcaecati blanditiis officia repudiandae, fugiat amet, aspernatur consectetur veniam, excepturi laudantium dicta facilis. Accusantium, nihil, tenetur dicta nobis ex inventore temporibus molestias, error quas voluptatum obcaecati neque odio numquam debitis vero velit.</p>
+                </div>
+            </div>
+            <div class="row u-mb-48">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="img-container">
+                        <img src="assets/images/examples/example_04.jpg" alt="" class="img">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <h1>Example</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iure totam sed nemo et eos ut accusamus placeat obcaecati blanditiis officia repudiandae, fugiat amet, aspernatur consectetur veniam, excepturi laudantium dicta facilis. Accusantium, nihil, tenetur dicta nobis ex inventore temporibus molestias, error quas voluptatum obcaecati neque odio numquam debitis vero velit.</p>
+                </div>
+            </div>
+            <div class="row u-mb-48">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="img-container">
+                        <img src="assets/images/examples/example_05.jpg" alt="" class="img">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <h1>Example</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iure totam sed nemo et eos ut accusamus placeat obcaecati blanditiis officia repudiandae, fugiat amet, aspernatur consectetur veniam, excepturi laudantium dicta facilis. Accusantium, nihil, tenetur dicta nobis ex inventore temporibus molestias, error quas voluptatum obcaecati neque odio numquam debitis vero velit.</p>
+                </div>
+            </div>
+            <div class="row u-mb-48">
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <div class="img-container">
+                        <img src="assets/images/examples/example_01.jpg" alt="" class="img">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12">
+                    <h1>Example</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iure totam sed nemo et eos ut accusamus placeat obcaecati blanditiis officia repudiandae, fugiat amet, aspernatur consectetur veniam, excepturi laudantium dicta facilis. Accusantium, nihil, tenetur dicta nobis ex inventore temporibus molestias, error quas voluptatum obcaecati neque odio numquam debitis vero velit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End blog -->
+
+    <!-- Start footer -->
+
+    <!-- 方法一 JQuery -->
+    <div id="footer-placeholder"></div>
+
+    <!-- 方法二  -->
+    <script id="footer-placeholder" src="assets/vendor/script.js"></script>
+
+    <special-footer></special-footer>
+
+    <!-- End footer -->
+
+<!-- Javascript -->
+<script src="//code.jquery.com/jquery-3.7.0.js"></script>
+
+    <script>
+        $(function() {
+            $("footer-placeholder").load("./footer.html");
+        });
+
+    </script>
+
+    
+</body>
+</html>
