@@ -22,19 +22,39 @@
 				<ul class="nav">
 					<li><a href="#" class="nav__link">About</a></li>
 					<li><a href="#" class="nav__link">Service</a></li>
-					<li><a href="#" class="nav__link">Product</a></li>
+					<li>
+						<a href="#" class="nav__link">Product</a>
+						<ul class="collapse_content">
+							<li><a href="#" class="nav__link">Prodcut_01</a></li>
+							<li><a href="#" class="nav__link">Prodcut_02</a></li>
+							<li><a href="#" class="nav__link">Prodcut_03</a></li>
+						</ul>
+					</li>
 					<li><a href="#" class="nav__link">Contact Us</a></li>
-					<li><a href="#" class="nav__link">Blog</a></li>		
+					<li><a href="./blog.html" class="nav__link">Blog</a></li>		
 				</ul>
 
-				<a href="#" class="close-btn">
-					<span></span>
-					<span></span>
+				<a href="#" class="close-btn" id="close-btn">
+					<span></span>					
+					<span></span>					
 				</a>	
 				
 			</div>			
 		</div>			
 	<!-- End navModal -->
+
+<!-- Javascript -->
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const closeBtn = document.getElementById("close-btn");
+			if (closeBtn) {
+				closeBtn.addEventListener("click", function (event) {
+					event.preventDefault(); 
+				 });
+			}
+		});
+	</script>
 	
 </body>
 </html>

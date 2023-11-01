@@ -45,7 +45,12 @@
     padding: 10px 28px;
 	color: #808080;
 }
-
+.collapse_content{display: none;}
+.nav__link:hover{color: aqua;}
+.nav__link:hover + .collapse_content{
+	color: red;
+	display: block;
+}
 /* menu toggle */
 .menu-toggle{
 	width: 50px	;
@@ -139,15 +144,20 @@ img{
 	}
 }
 
-
 /* -------------------- *\
     Blog
 \* -------------------- */
 .blog{
 	width: 100%;
 	height: 100%;
-	margin-top: 50px;
-	border: yellow 5px solid;
+	margin-top: 80px;
+}
+.box-bottom{
+	padding-bottom: 50px;
+	border-bottom: #808080 1px solid;
+}
+.box-bottom:last-child{
+	border-bottom: 0;
 }
 /* -------------------- *\
     Search bar
