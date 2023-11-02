@@ -1,24 +1,14 @@
-<!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/vendor/normalize.css">
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/components.css">
-    <title>Document</title>
-</head>
-<body>
-    
-    <!-- Start footer -->
-    <footer class="footer">
+class SpecialFooter extends HTMLElement {
+  connectedCallback (){
+    this.innerHTML = 
+        <footer class="footer">
         <div class="container">
             <ul class="footer_menu">
                 <div  class="footer__item">
-                    <a href="#" class="footer__title title-hover">About</a>
+                    <a href="#" class="footer__title">About</a>
                 </div>
                 <div class="footer__item">
-                    <h3 class="footer__title">Service</h3>
+                    <h3 href="#" class="footer__title">Service</h3>
                     <ul>
                         <li><a href="#" class="footer__link">FAQs</a></li>                    
                         <li><a href="#" class="footer__link">Delivery Information</a></li>
@@ -35,7 +25,7 @@
                     </ul>
                 </div>
                 <div class="footer__item">
-                    <h3 class="footer__title">Socials</h3>
+                    <h3 href="#" class="footer__title">Socials</h3>
                     <ul>
                         <li><a href="#" class="footer__link">Line</a></li>                    
                         <li><a href="#" class="footer__link">Facebook</a></li>
@@ -43,13 +33,12 @@
                     </ul>
                 </div>
                 <div class="footer__item">
-                    <a href="./blog.html" class="footer__title  title-hover">Blog</a>
+                    <a href="./blog.html" class="footer__title">Blog</a>
                 </div>    
             </ul>
         </div>
     </footer>
-    <!-- End footer -->
-        
-    
-</body>
-</html>
+  }
+
+}
+customElements.define('special-footer',SpecialFooter)

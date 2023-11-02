@@ -1,0 +1,97 @@
+<DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- CSS reset -->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/normalize.css">
+	<!-- CSS custom -->
+	<link rel="stylesheet" href="assets/vendor/normalize.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+	<link rel="stylesheet" href="assets/css/blog.css">
+	<script type="module" src="assets/vendor/script.js"></script>
+	<title>Article</title>
+</head>
+<body>
+	<div class="wrapper">
+		
+
+		<!-- Start navigation -->
+		<div class="navbar">
+			<div class="container">
+	
+				<a href="./index.html" class="logo">Demo</a>
+				
+				<ul class="nav">
+					<li><a href="#" class="nav__link">About</a></li>
+					<li>
+						<a href="#" class="nav__link">Service</a>
+					</li>
+					<li>
+						<a href="#" class="nav__link">Product</a>
+					</li>
+					<li><a href="#" class="nav__link">Contact Us</a></li>
+					<li><a href="./blog.html" class="nav__link">Blog</a></li>    
+				</ul>
+		
+				<a href="./navModal.html" class="menu-toggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+	
+			</div>        
+		</div>			
+		<!-- End navigation -->
+
+		<!-- Start content -->
+		<div class="content">
+			<div class="container">
+				<div class="article">
+					<h1 class="title">範例文章01,什麼是AJAX</h1>
+					<div class="date"><time>2023-10-03</time></div>
+					<div class="article-img-container">
+						<img class="article-img" src="assets/images/examples/example_02.jpg" alt="">
+					</div>
+					<div class="text">
+						<p class="paragraph">來自維基百科</p>
+						<p class="paragraph">
+							AJAX即「Asynchronous JavaScript and XML」（非同步的JavaScript與XML技術），指的是一套綜合了多項技術的瀏覽器端網頁開發技術。Ajax的概念由傑西·詹姆士·賈瑞特所提出[1]。
+							傳統的Web應用允許使用者端填寫表單（form），當送出表單時就向網頁伺服器傳送一個請求。伺服器接收並處理傳來的表單，然後送回一個新的網頁，但這個做法浪費了許多頻寬，因為在前後兩個頁面中的大部分HTML碼往往是相同的。由於每次應用的溝通都需要向伺服器傳送請求，應用的回應時間依賴於伺服器的回應時間。這導致了使用者介面的回應比本機應用慢得多。
+							與此不同，AJAX應用可以僅向伺服器傳送並取回必須的資料，並在客戶端採用JavaScript處理來自伺服器的回應。因為在伺服器和瀏覽器之間交換的資料大量減少，伺服器回應更快了。同時，很多的處理工作可以在發出請求的客戶端機器上完成，因此Web伺服器的負荷也減少了。
+							類似於DHTML或LAMP，AJAX不是指一種單一的技術，而是有機地利用了一系列相關的技術。雖然其名稱包含XML，但實際上資料格式可以由JSON代替以進一步減少資料量。而客戶端與伺服器也並不需要非同步。一些基於AJAX的「衍生／合成」式（derivative/composite）的技術也正在出現，如AFLAX。
+						</p>
+						<p class="paragraph">
+							使用Ajax的最大優點，就是能在不更新整個頁面的前提下維護資料。這使得Web應用程式更為迅捷地回應使用者動作，並避免了在網路上傳送那些沒有改變的資訊。
+						</p>
+						<p class="paragraph">
+							Ajax不需要任何瀏覽器外掛程式，但需要使用者允許JavaScript在瀏覽器上執行。就像DHTML應用程式那樣，Ajax應用程式必須在眾多不同的瀏覽器和平台上經過嚴格的測試。隨著Ajax的成熟，一些簡化Ajax使用方法的程式庫也相繼問世。同樣，也出現了另一種輔助程式設計的技術，為那些不支援JavaScript的使用者提供替代功能。
+						</p>
+						<p class="paragraph">
+							對應用Ajax最主要的批評就是，它可能破壞瀏覽器的後退與加入收藏書籤功能[3]。在動態更新頁面的情況下，使用者無法回到前一個頁面狀態，這是因為瀏覽器僅能記下歷史記錄中的靜態頁面。一個被完整讀入的頁面與一個已經被動態修改過的頁面之間的可能差別非常微妙；使用者通常都希望單擊後退按鈕，就能夠取消他們的前一次操作，但是在Ajax應用程式中，卻無法這樣做。不過開發者已想出了種種辦法來解決這個問題，HTML5 之前的方法大多是在使用者單擊後退按鈕訪問歷史記錄時，通過建立或使用一個隱藏的IFRAME來重現頁面上的變更。（例如，當使用者在Google Maps中單擊後退時，它在一個隱藏的IFRAME中進行搜尋，然後將搜尋結果反映到Ajax元素上，以便將應用程式狀態恢復到當時的狀態）。
+						</p>
+						<p class="paragraph">
+							關於無法將狀態加入收藏或書籤的問題，HTML5之前的一種方式是使用URL片斷識別碼（通常被稱為錨點，即URL中#後面的部分）來保持追蹤，允許使用者回到指定的某個應用程式狀態。（許多瀏覽器允許JavaScript動態更新錨點，這使得Ajax應用程式能夠在更新顯示內容的同時更新錨點。）HTML5 以後可以直接操作瀏覽歷史，並以字串形式儲存網頁狀態，將網頁加入網頁收藏夾或書籤時狀態會被隱形地保留。上述兩個方法也可以同時解決無法後退的問題。
+						</p>
+						<p class="paragraph">
+							進行Ajax開發時，網路延遲——即使用者發出請求到伺服器發出回應之間的間隔——需要慎重考慮。如果不給予使用者明確的回應[4]，沒有恰當的預讀資料[5]，或者對XMLHttpRequest的不恰當處理[6]，都會使使用者感到厭煩[7]。通常的解決方案是，使用一個視覺化的組件來告訴使用者系統正在進行後台操作並且正在讀取資料和內容。
+						</p>
+					</div>
+								
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- End content -->
+
+		<!-- Start footer -->
+		<script id="footer-placeholder" src="assets/vendor/script.js"></script>
+		<!-- End footer -->
+
+
+
+	</div>
+</body>
+</html>

@@ -41,16 +41,16 @@
 	align-items: center;
 }
 .nav__link{
+	display: block;
     font-size: 20px;
     padding: 10px 28px;
 	color: #808080;
+	text-wrap: nowrap;
 }
-.collapse_content{display: none;}
-.nav__link:hover{color: aqua;}
-.nav__link:hover + .collapse_content{
-	color: red;
-	display: block;
+.nav__link:hover{
+	color: aqua;
 }
+
 /* menu toggle */
 .menu-toggle{
 	width: 50px	;
@@ -133,6 +133,9 @@ img{
 	color: #808080;
 	padding-left: 13px;
 	margin-top: 10px;
+}
+.title-hover:hover, .footer__link:hover{
+	color: #FEB8D1;
 }
 @media  (max-width:768px) {
 	.footer_menu{
